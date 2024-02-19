@@ -1,0 +1,206 @@
+/* Importing Google Font: Kufam */
+@import url('https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+/* Resetting margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content area with cosmic background pattern */
+main {
+    background-color: black;
+    background-image:
+        radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
+        radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
+        radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
+        radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+.nav-link {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-family: Kufam, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+    font-weight: 600;
+    transition: 0.4s ease;
+    color: #D4AF37;
+}
+
+.navbar-nav {
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-logo {
+    height: 50px;
+}
+
+#burgerMenu {
+    width: 100%;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+header {
+    border-bottom: 2px solid #D4AF37;
+}
+
+.hero {
+    background-color: aqua;
+    background-image: url(../img/space-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: Kufam, Arial, Helvetica, sans-serif;
+}
+
+.join-btn {
+    font-size: 30px;
+    font-family: Kufam, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    border: 3px solid;
+    border-radius: 40px;
+    padding: 5px 30px;
+    margin-top: 20px;
+    background-color: #00000043;
+}
+
+.join-btn:hover {
+    transition: 0.4s ease;
+    border: 3px solid;
+    border-radius: 40px;
+    padding: 5px 30px;
+    background-color: #D4AF37;
+}
+
+.astronomy-pic {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.astronomy-pic h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Kufam, Arial, Helvetica, sans-serif;
+}
+
+.date-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.date-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.date-form button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.date-form button:hover {
+    background-color: #0056b3;
+}
+
+.apod-content {
+    text-align: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.apod-content p {
+    font-family: Kufam, Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn-primary {
+    margin-top: 15px;
+    background-color: #D4AF37 !important; /* Override Bootstrap's primary color */
+    color: black;
+}
+
+footer {
+    padding-top: 20px;
+    background-color: black;
+    height: 100px;
+    color: white;
+    width: 100%;
+}
+
+.socials {
+    color: white;
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.socials i:hover {
+    cursor: pointer;
+    color: #D4AF37;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        gap: 60px;
+    }
+
+}
